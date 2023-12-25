@@ -1,0 +1,22 @@
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
+
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+}
+
+.product-pair {
+  display: flex;
+  flex-wrap: wrap;
+
+  dt {
+    margin-bottom: 5px;
+    &::after {
+      content: ': ';
+    }
+  }
+}
